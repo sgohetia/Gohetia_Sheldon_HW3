@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap");
 
+/* This is for the Outline to be hidden*/
 .hidden {
   display: none;
 }
 
+/* Overall declaration */
 html {
   scroll-behavior: smooth;
 }
@@ -21,6 +23,7 @@ body {
   color: #f5dd02;
 }
 
+/* This is for the header looks and layout */
 header {
   width: 100%;
   height: 40vh;
@@ -28,6 +31,7 @@ header {
   color: inherit;
 }
 
+/* This for the Code Cells Particles Background */
 main #sheldon-code-cells {
   position: absolute;
   width: 100%;
@@ -36,6 +40,7 @@ main #sheldon-code-cells {
   left: 0;
 }
 
+/* This for the header position and style */
 header .info-text {
   display: flex;
   flex-direction: column;
@@ -55,17 +60,19 @@ header .info-text h3 {
   font-size: 1.5rem;
 }
 
+header > h1 {
+  text-align: center;
+  padding: 10px;
+}
+
+/* This for the Main and Section design and layout */
 main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-header > h1 {
-  text-align: center;
-  padding: 10px;
-}
-
+/* Cascading the main color to the rest of the page */
 section {
   width: 300px;
   border: 1px solid #f5dd02;
@@ -107,6 +114,7 @@ ul li {
   text-transform: none;
 }
 
+/* Adding Pseudo and animation to Unordered list and Shapes */
 .inprogress li:nth-child(odd) {
   background-color: #66490c;
 }
@@ -121,6 +129,14 @@ ul li {
   background-color: #201601;
   color: #fff;
 }
+ul li:hover {
+  background-color: #1b160b;
+}
+summary:hover {
+  background-color: #3b3017;
+}
+
+/* Animation feature for the shapes */
 @keyframes fadeSquare {
   0% {
     opacity: 0;
@@ -233,13 +249,8 @@ ul li {
     opacity: 0;
   }
 }
-ul li:hover {
-  background-color: #1b160b;
-}
-summary:hover {
-  background-color: #3b3017;
-}
 
+/* Adding CSS to the lightbox section */
 .lightbox {
   position: absolute;
   top: 0;
@@ -284,6 +295,8 @@ summary:hover {
 .lightbox:target {
   display: block;
 }
+
+/* Adding Pseudo selector style for the checkbox in lightbox section */
 input[type="checkbox"]:checked + span:after {
   content: "Thank you so much! 😍";
   margin-left: 5px;
@@ -293,6 +306,7 @@ p {
   line-height: 16px;
 }
 
+/* Adding style to details tag and summary dropdown */
 details {
   border: solid 1px #f5dd02;
   padding: 10px;
@@ -303,6 +317,8 @@ summary {
   background-color: #66490c;
   padding: 10px;
 }
+
+/* Rescaling Checkbox Icon */
 input[type="checkbox"] {
   transform: scale(1.5);
 }
@@ -345,7 +361,7 @@ input[type="checkbox"] {
   transform: scale(1.3);
 }
 #tb-prog-list1[type="checkbox"]:checked + span:after {
-  content: "🛠️";
+  content: "(76%) 🛠️";
   margin-left: 5px;
 }
 #tb-prog-list2[type="checkbox"] {
@@ -354,7 +370,7 @@ input[type="checkbox"] {
   transform: scale(1.3);
 }
 #tb-prog-list2[type="checkbox"]:checked + span:after {
-  content: "🛠️";
+  content: "(84%) 🛠️";
   margin-left: 5px;
 }
 #tb-prog-list3[type="checkbox"] {
@@ -363,7 +379,7 @@ input[type="checkbox"] {
   transform: scale(1.3);
 }
 #tb-prog-list3[type="checkbox"]:checked + span:after {
-  content: "🛠️";
+  content: "(95%) 🛠️";
   margin-left: 5px;
 }
 /*checkbox CSS for DONE unordered list*/
@@ -396,6 +412,7 @@ input[type="checkbox"] {
   margin-left: 5px;
 }
 
+/* Adding style and properties to Ghost SVG file for animation */
 .container {
   height: 80%;
 }
