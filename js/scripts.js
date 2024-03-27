@@ -1,3 +1,6 @@
+/* Adding script logic to modify and control the looks
+and feel of the particle background */
+
 particlesJS("sheldon-code-cells", {
   particles: {
     number: {
