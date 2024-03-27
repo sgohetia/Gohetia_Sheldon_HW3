@@ -3,7 +3,115 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>CSS CASCADE, SELECTION and PSEUDO SELECTORS</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1 class="hidden">Header Logo Animation</h1>
+      <div class="container">
+        <img src="images/ghost.svg" id="ghost" alt="little ghost" />
+        <div id="shadow"></div>
+      </div>
+      <div class="info-text">
+        <h1>FIP Management</h1>
+        <h2 class="hidden">This is the slogan part.</h2>
+        <h3>This is my Project Task Management Process</h3>
+      </div>
+    </header>
+    <br /><br />
+    <main>
+      <div id="sheldon-code-cells"></div>
+      <section id="todo">
+        <h2>Task To-Do</h2>
+        <div class="square"></div>
+        <ul class="todo">
+          <li>
+            <input type="checkbox" id="tb-todo-list1" />Package home-page
+            wireframing<span></span>
+          </li>
+          <li>
+            <input type="checkbox" id="tb-todo-list2" />Room page html mobile
+            version<span></span>
+          </li>
+          <li>
+            <input type="checkbox" id="tb-todo-list3" />Spa/Activities html
+            mobile version<span></span>
+          </li>
+        </ul>
+      </section>
+      <section id="inprogress">
+        <h2>In Progress</h2>
+        <div class="circle"></div>
+        <ul class="inprogress">
+          <li>
+            <input type="checkbox" id="tb-prog-list1" />Room html coding<span
+            ></span>
+          </li>
+          <li>
+            <input type="checkbox" id="tb-prog-list2" />Applying css
+            animations<span></span>
+          </li>
+          <li>
+            <input type="checkbox" id="tb-prog-list3" />Package wireframing in
+            XD<span></span>
+          </li>
+        </ul>
+      </section>
+      <section id="done">
+        <h2>Done</h2>
+        <div class="triangle-up"></div>
+        <ul class="done">
+          <li>
+            <input type="checkbox" id="tb-done-list1" />Room and Spa
+            wireframe<span></span>
+          </li>
+          <li>
+            <input type="checkbox" id="tb-done-list2" />Room homepage html
+            structures<span></span>
+          </li>
+          <li>
+            <input type="checkbox" id="tb-done-list3" />Master room page html
+            structures<span></span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <a href="#lightbox" class="inbox"><i class="bx bxs-envelope"></i></a>
+    <h2 class="hidden">This will be the lightbox Pop-up</h2>
+    <section class="lightbox" id="lightbox">
+      <a href="" class="lightbox_close">x</a>
+      <article>
+        <h2 class="lb_heading">New Message!</h2>
+        <br />
+        <details>
+          <summary>From: Sheldon Gohetia</summary>
+          <br />
+          <h3>Subject: FIP</h3>
+          <p>
+            Hi Professor, I am currently working on developing the Room
+            homepage, Master Room, Spa, and Package pages for the mobile version
+            of our project. I aim to complete these tasks before the end of the
+            first week of April, if possible. <br /><br />
+            Furthermore, for this assignment, I have incorporated elements from
+            our previous lessons and integrated additional scripts to enhance
+            the design.<br /><br />I sincerely appreciate your exceptional
+            teaching and clear explanations on various topics.<br /><br />
+            Thank you for your guidance and support.
+          </p>
+          <br />
+          <h3>If you please tick the box Sir, for acknowledgement.</h3>
+          <br />
+          <input type="checkbox" /><span></span>
+          <br />
+        </details>
+      </article>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
