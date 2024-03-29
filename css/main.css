@@ -113,6 +113,9 @@ ul li {
   padding: 6px 8px;
   text-transform: none;
 }
+ul li p {
+  display: inline;
+}
 
 /* Adding Pseudo and animation to Unordered list and Shapes */
 .inprogress li:nth-child(odd) {
@@ -386,28 +389,31 @@ input[type="checkbox"] {
 
 #tb-done-list1[type="checkbox"] {
   margin-top: 1px !important;
-  margin-right: 10px;
+  margin-right: 1px;
   transform: scale(1.3);
 }
-#tb-done-list1[type="checkbox"]:checked + span:after {
+input[type="checkbox"]:checked + p {
+  text-decoration: line-through;
+}
+#tb-done-list1[type="checkbox"]:checked ~ span.check:after {
   content: "✅";
   margin-left: 5px;
 }
 #tb-done-list2[type="checkbox"] {
   margin-top: 1px !important;
-  margin-right: 10px;
+  margin-right: 1px;
   transform: scale(1.3);
 }
-#tb-done-list2[type="checkbox"]:checked + span:after {
+#tb-done-list2[type="checkbox"]:checked ~ span.check:after {
   content: "✅";
   margin-left: 5px;
 }
 #tb-done-list3[type="checkbox"] {
   margin-top: 1px !important;
-  margin-right: 10px;
+  margin-right: 1px;
   transform: scale(1.3);
 }
-#tb-done-list3[type="checkbox"]:checked + span:after {
+#tb-done-list3[type="checkbox"]:checked ~ span.check:after {
   content: "✅";
   margin-left: 5px;
 }
